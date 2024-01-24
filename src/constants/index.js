@@ -150,50 +150,11 @@ export const experiences = [
         iconBg: "#accbe1",
         date: "November 2022 to December 2023",
         points: [                        
-            "Managed front counter operations, efficiently handling both online and in-person orders.",
-            "Provided exceptional customer service, addressing inquiries, processing transactions, and ensuring a positive dining experience.",
-            "Demonstrated strong multitasking abilities by balancing various tasks such as order processing, customer interactions, and maintaining cleanliness standards.",
+            "Managed front counter operations, efficiently handling an average of 150 orders daily, encompassing both online and in-person transactions.",
+            "Provided exceptional customer service, addressing an average of 30 inquiries daily and processing over 200 transactions per shift.",
+            "Demonstrated strong multitasking abilities by balancing various tasks, including order processing, handling an average of 50 customer interactions per day, and maintaining cleanliness standards.",
         ],
-    },
-    /*{
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },*/
+    },    
 ];
 
 export const socialLinks = [
