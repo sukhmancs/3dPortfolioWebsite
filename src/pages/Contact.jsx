@@ -5,6 +5,7 @@ import { Suspense, useRef, useState } from "react";
 import { Fox } from "../models";
 import useAlert from "../hooks/useAlert";
 import { Alert, Loader } from "../components";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
   const formRef = useRef();
@@ -13,6 +14,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
 
+  const recaptchaRef = useRef(null);
+
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
@@ -20,21 +23,39 @@ const Contact = () => {
   const handleFocus = () => setCurrentAnimation("walk");
   const handleBlur = () => setCurrentAnimation("idle");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleRecaptchaVerification = async () => {
+    const recaptchaValue = await recaptchaRef.current.executeAsync();
+    if (!recaptchaValue) {
+      showAlert({
+        show: true,
+        text: "reCAPTCHA verification failed 😢",
+        type: "danger",
+      });
+      return null;
+    }
+    return recaptchaValue;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();  
+
+    const recaptchaValue = await handleRecaptchaVerification();
+    if (!recaptchaValue) return;
+
     setLoading(true);
     setCurrentAnimation("hit");
 
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,        
         {
           from_name: form.name,
           to_name: "Sukhman",
           from_email: form.email,
-          to_email: "sukhmansinghh2@gmail.com",
+          to_email: import.meta.env.VITE_APP_MY_EMAIL,
           message: form.message,
+          'g-recaptcha-response': recaptchaValue,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
@@ -124,6 +145,13 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
+
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            size="invisible"
+            sitekey={import.meta.env.VITE_APP_RECAPTCHA_SITE_KEY}  // Use the Site Key obtained from reCAPTCHA
+            badge="inline"
+          />
 
           <button
             type='submit'
