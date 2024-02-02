@@ -4,7 +4,9 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import sakura from "../assets/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
+import dragHandIcon from "../assets/images/drag.png";
 import { Bird, Island, Plane, Sky } from "../models";
+import "./HomePage.css";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -13,7 +15,8 @@ const Home = () => {
 
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
-  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);  
+  const showHint = useState(true);
 
   useEffect(() => {
     if (isPlayingMusic) {
@@ -44,10 +47,10 @@ const Home = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [0.2, 0.2, 0.2];
+      screenScale = [0.13, 0.13, 0.13];
       screenPosition = [0, -6.5, -43.4];
     } else {
-      screenScale = [0.24, 0.21, 0.24];
+      screenScale = [0.2, 0.2, 0.2];
       screenPosition = [0, -6.5, -43.4];
     }
 
@@ -62,6 +65,20 @@ const Home = () => {
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
+
+      {showHint && (
+          <>            
+            <div className="absolute bottom-10 left-1/2 animate-swipeAnimation z-10">
+              <div className="relative -left-1/2">
+                <img
+                  src={dragHandIcon}
+                  alt="Hand Icon"
+                  className="h-10 w-auto"
+                />                
+              </div>
+            </div>
+          </>
+        )}
 
       <Canvas
         className={`w-full h-screen bg-transparent ${
