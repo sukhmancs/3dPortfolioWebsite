@@ -66,7 +66,7 @@ const Home = () => {
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
-      {showHint && (
+      {/* {showHint && (
           <>            
             <div className="absolute bottom-10 left-1/2 animate-swipeAnimation z-10">
               <div className="relative -left-1/2">
@@ -78,7 +78,7 @@ const Home = () => {
               </div>
             </div>
           </>
-        )}
+        )} */}
 
       <Canvas
         className={`w-full h-screen bg-transparent ${
