@@ -45,6 +45,7 @@ import translation from './translation.svg'
 import discord from './discord.svg'
 import portfolio from './portfolio.svg'
 import game from './game.svg'
+import wordpress from './wordpress-plain.svg'
 
 export {
     css,
@@ -92,5 +93,6 @@ export {
     translation,
     discord,
     portfolio,
-    game
+    game,
+    wordpress
 }

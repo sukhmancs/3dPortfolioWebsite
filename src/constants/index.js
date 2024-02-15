@@ -41,7 +41,8 @@ import {
     translation,
     discord,
     portfolio,
-    game
+    game,
+    wordpress
 } from "../assets/icons";
 
 export const skills = [
@@ -139,6 +140,11 @@ export const skills = [
         imageUrl: mysql,
         name: "MySQL",
         type: "Database",
+    },
+    {
+        imageUrl: wordpress,
+        name: "Wordpress",
+        type: "Frontend",
     }
 ];
 
@@ -212,10 +218,10 @@ export const projects = [
         link: 'https://github.com/sukhmancs/nixos-config',
     },
     {
-        iconUrl: summiz,
+        iconUrl: wordpress,
         theme: 'btn-back-yellow',
-        name: 'Pop a Balloon',
-        description: 'Crafted an entertaining balloon-popping game using the dynamic capabilities of JavaScript. The game invites players to burst balloons with a simple click, demonstrating the power of web technologies in delivering interactive and engaging user experiences. With a clean and responsive design, the project showcases the seamless integration of HTML, CSS, and JavaScript to create a fun and accessible game for users of all ages.',
-        link: 'https://sukhmancs.github.io/a4/index.html',
+        name: 'Coffee Shop Website using WordPress',
+        description: 'Crafted a visually stunning website using WordPress technology. Employed various plugins, themes, and other tools to enhance functionality and design.',
+        link: 'http://beanthere.free.nf/',
     }
 ];
