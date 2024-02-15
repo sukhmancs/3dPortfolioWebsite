@@ -5,9 +5,12 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       navigate('/'); // redirect to home page after 5 seconds
     }, 5000);
+
+    // Clear the timeout if the component is unmounted
+    return () => clearTimeout(timeoutId);
   }, [navigate]);
 
   return (

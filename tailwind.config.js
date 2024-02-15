@@ -29,6 +29,7 @@ export default {
         swipeAnimation: 'swipeAnimation 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite',
         circleAnimation: 'circleAnimation 1s ease-in-out infinite',
         bounce: 'bounce 2s infinite',
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         swipeAnimation: {
@@ -40,6 +41,10 @@ export default {
           '0%': { transform: 'scale(0.5)', opacity: '0.5' },
           '50%': { transform: 'scale(1)', opacity: '1' },
           '100%': { transform: 'scale(0.5)', opacity: '0.5' },
+        },
+        pulse: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: .5 },
         },
       },
     },
