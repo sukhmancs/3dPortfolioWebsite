@@ -59,7 +59,7 @@ const Projects = () => {
           </div>
         ))}
       </div>     
-      
+      56
       <hr className='border-slate-200' />
 
       <CTA />
