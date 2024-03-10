@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla, timhortons, restraunt } from "../assets/images";
+import { meta, shopify, starbucks, tesla, timhortons, restraunt, shield, security } from "../assets/images";
 import {
     car,
     contact,
@@ -42,7 +42,8 @@ import {
     discord,
     portfolio,
     game,
-    wordpress
+    wordpress,
+    machine
 } from "../assets/icons";
 
 export const skills = [
@@ -150,17 +151,42 @@ export const skills = [
 
 export const experiences = [
     {
+        title: "Cyber Security Member",
+        company_name: "Mohawk College",
+        icon: security,
+        iconBg: "#accbe1",
+        date: "November 2022 to Current",
+        points: [ 
+            "Contributed as an active member, collaborating with the team to establish and optimize processes for efficient operations.",
+            "Organized and participated in knowledge-sharing sessions, fostering engagement with an average attendance of 20 members per session.",
+            "Stayed abreast of emerging cybersecurity technologies, tools, and methodologies throughcontinuous research.",            
+        ],
+    },
+    {
+        title: "Machine Operator",
+        company_name: "Hunter Amenities",
+        icon: machine, // replace with the appropriate icon
+        iconBg: "#accbe1",
+        date: "May 2023 to Februrary 2024",
+        points: [
+            "Showcased enhanced communication by providing well-detailed reports to warehouse supervisors and co-workers that helped contribute to a cohesive work environment.",
+            "Successfully managed customer returns and proactively verified customer orders/invoices.",
+            "Oversaw product quality and managed production.",
+            "Handled shift reports and quality assurance.",            
+        ],
+    },
+    {
         title: "Front Counter Associate",
         company_name: "Tim Horton's",
         icon: restraunt,
         iconBg: "#accbe1",
-        date: "November 2022 to December 2023",
+        date: "November 2022 to September 2023",
         points: [                        
             "Managed front counter operations, efficiently handling an average of 150 orders daily, encompassing both online and in-person transactions.",
             "Provided exceptional customer service, addressing an average of 30 inquiries daily and processing over 200 transactions per shift.",
             "Demonstrated strong multitasking abilities by balancing various tasks, including order processing, handling an average of 50 customer interactions per day, and maintaining cleanliness standards.",
         ],
-    },    
+    },        
 ];
 
 export const socialLinks = [

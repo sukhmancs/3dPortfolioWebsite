@@ -6,6 +6,10 @@ import tesla from './tesla.png'
 import logo from './logo3.png'
 import timhortons from './timhortons.jpg'
 import restraunt from './restraunt.png'
+import unix from './unix-original.svg'
+import machine from './machine.svg'
+import security from './security.svg'
+import shield from './Shield.gif'
 
 export {
     hero,
@@ -15,5 +19,9 @@ export {
     tesla,
     logo,
     timhortons,
-    restraunt
+    restraunt,
+    unix,
+    machine,
+    security,
+    shield
 }
