@@ -2,8 +2,14 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import { Footer, Navbar } from "./components";
 import { About, Contact, Home, Projects, NotFound } from "./pages";
+import { useEffect } from 'react';
 
 const App = () => {
+  // useEffect(() => {
+  //   document.addEventListener('contextmenu', (event) => {
+  //     event.preventDefault();
+  //   });
+  // }, []);
   return (
     <main className='bg-slate-300/20'>
       <Router>
