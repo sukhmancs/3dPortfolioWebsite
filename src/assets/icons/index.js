@@ -47,6 +47,7 @@ import portfolio from './portfolio.svg'
 import game from './game.svg'
 import wordpress from './wordpress-plain.svg'
 import machine from './machine-hand.svg'
+import instagram from './instagram.svg'
 
 export {
     css,
@@ -96,5 +97,6 @@ export {
     portfolio,
     game,
     wordpress,
-    machine
+    machine,
+    instagram
 }

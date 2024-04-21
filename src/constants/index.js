@@ -43,7 +43,8 @@ import {
     portfolio,
     game,
     wordpress,
-    machine
+    machine,
+    instagram
 } from "../assets/icons";
 
 export const skills = [
@@ -225,7 +226,7 @@ export const projects = [
     {
         iconUrl: game,
         theme: 'btn-back-blue',
-        name: 'Unity 3d Game',
+        name: 'Unity 3D Game',
         description: 'Contributed significantly to the development of an immersive Unity 3D game, demonstrating proficiency in game design, graphics, and user interaction.',
         link: 'https://drive.google.com/file/d/1w1MJTiSUrRJvLIgaivQi0-Awl5c8-FEw/view?usp=sharing',
     },
@@ -237,16 +238,16 @@ export const projects = [
         link: 'https://github.com/sukhmancs/3dPortfolioWebsite',
     },
     {
-        iconUrl: nix,
+        iconUrl: instagram,
         theme: 'btn-back-black',
-        name: 'NixOS Deployment Scripts',
-        description: 'Leveraged the power of Nix language with flakes enabled to create a robust and modular system configuration for NixOS. The use of flakes allows for reproducibility and declarative package management, ensuring a consistent and easily shareable configuration.',
-        link: 'https://github.com/sukhmancs/nixos-config',
+        name: 'Instagram Clone',
+        description: 'Developed an Instagram clone leveraging React Native, Firebase, Radis, and Expo for seamless cross-platform app functionality.',
+        link: 'https://github.com/sukhmancs/react-native-instagram-clone/tree/master',
     },
     {
         iconUrl: wordpress,
         theme: 'btn-back-yellow',
-        name: 'Coffee Shop Website using WordPress',
+        name: 'Coffee Shop Website',
         description: 'Crafted a visually stunning website using WordPress technology. Employed various plugins, themes, and other tools to enhance functionality and design.',
         link: 'http://beanthere.free.nf/',
     }
