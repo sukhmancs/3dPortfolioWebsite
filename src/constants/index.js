@@ -44,7 +44,8 @@ import {
     game,
     wordpress,
     machine,
-    instagram
+    instagram,
+    cloudbrain
 } from "../assets/icons";
 
 export const skills = [
@@ -217,11 +218,11 @@ export const projects = [
         link: 'https://github.com/sukhmancs/TextWizards/blob/main/smallGPT_pg_book_corpus_encoder_decoder_with_attention.ipynb',
     },
     {
-        iconUrl: translation,
+        iconUrl: cloudbrain,
         theme: 'btn-back-green',
-        name: 'Machine Translation from French to English',
-        description: 'Engineered an advanced French-to-English machine translation system using encoder-decoder architecture with attention mechanism.',
-        link: 'https://github.com/sukhmancs/TextWizards/blob/main/translation_encoder_decoder_attention_french_english.ipynb',
+        name: 'Llama360',
+        description: 'Advanced next-word prediction model based on LLaMA-7B.',
+        link: 'https://github.com/sukhmancs/amber-train?tab=readme-ov-file',
     },
     {
         iconUrl: game,

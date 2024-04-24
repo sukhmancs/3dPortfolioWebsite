@@ -26,7 +26,6 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
-
 import mssql from './mssql.svg'
 import mysql from './mysql.svg'
 import nix from './nixos.svg'
@@ -48,6 +47,7 @@ import game from './game.svg'
 import wordpress from './wordpress-plain.svg'
 import machine from './machine-hand.svg'
 import instagram from './instagram.svg'
+import cloudbrain from './cloud-brain.svg'
 
 export {
     css,
@@ -98,5 +98,6 @@ export {
     game,
     wordpress,
     machine,
-    instagram
+    instagram,
+    cloudbrain
 }
