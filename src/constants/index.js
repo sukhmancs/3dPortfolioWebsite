@@ -240,7 +240,7 @@ export const projects = [
     name: "Unity 3D Game",
     description:
       "Contributed significantly to the development of an immersive Unity 3D game, demonstrating proficiency in game design, graphics, and user interaction.",
-    link: "https://github.com/sukhmancs/bloodborne-v2",
+    link: "https://github.com/sukhmancs/bladborne",
   },
   {
     iconUrl: portfolio,
@@ -267,4 +267,3 @@ export const projects = [
     link: "http://beanthere.free.nf/",
   },
 ];
-
