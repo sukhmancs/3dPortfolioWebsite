@@ -55,6 +55,8 @@ import {
   machine,
   instagram,
   cloudbrain,
+  it_assistant,
+  help_desk,
 } from "../assets/icons";
 
 export const skills = [
@@ -201,7 +203,7 @@ export const experiences = [
   {
     title: "Help Desk Technician",
     company_name: "National Steel Car LTD",
-    icon: shield,
+    icon: help_desk,
     iconBg: "#accbe1",
     date: "January 2022 to March 2023",
     points: [
@@ -225,7 +227,7 @@ export const experiences = [
   {
     title: "Information Technology Assistant",
     company_name: "City of Brantford",
-    icon: starbucks,
+    icon: it_assistant,
     iconBg: "#accbe1",
     date: "September 2020 to April 2021",
     points: [
