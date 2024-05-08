@@ -7,6 +7,7 @@ import {
   restraunt,
   shield,
   security,
+  assembly,
 } from "../assets/images";
 import {
   car,
@@ -159,6 +160,11 @@ export const skills = [
     imageUrl: wordpress,
     name: "Wordpress",
     type: "Frontend",
+  },
+  {
+    imageUrl: assembly,
+    name: "Assembly",
+    type: "Backend",
   },
 ];
 
