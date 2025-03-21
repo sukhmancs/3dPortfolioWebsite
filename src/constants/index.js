@@ -207,39 +207,41 @@ export const experiences = [
   //    ],
   //  },
   {
-    title: "Help Desk Technician",
+    title: "Service Desk Technician",
+    company_name: "City of Hamilton",
+    icon: help_desk,
+    iconBg: "#accbe1",
+    date: "September 2024 to December 2024",
+    points: [      
+    "Resolved technical issues in Windows, including account lockouts and password resets.",
+    "Documented system failures and network issues, using Ivanti ticketing system for incident tracking.",
+    "Created and maintained technical documentation in OneNote, providing users with clear guidelines on system usage, troubleshooting steps, and security best practices.",
+    "Leveraged knowledge in Active Directory, Cisco Webex, DNS, WINS, SCCM, and Ivanti to troubleshoot and resolve complex IT issues."
+    ],
+  },
+  {
+    title: "IT Helpdesk Technician",
     company_name: "National Steel Car LTD",
     icon: help_desk,
     iconBg: "#accbe1",
-    date: "January 2022 to March 2023",
+    date: "January 2024 to September 2024",
     points: [
-      "Provided technical support to over 100 employees, resolving an average of 10 tickets daily.",
-      "Demonstrated strong problem-solving skills by troubleshooting and resolving hardware and software issues.",
-      "Collaborated with the IT team to maintain and update the company's IT infrastructure, ensuring optimal performance and security.",
+      "Provided technical support for Windows-based systems, troubleshooting hardware, software, and network issues.",
+      "Diagnosed and resolved connectivity issues for on-premise network infrastructure and VPN access.",
+      "Assisted with configuring and deploying company workstations, ensuring proper security protocols.",
+      "Leveraged knowledge in Microsoft Service Management Console, Exchange Online, and remote support tools to troubleshoot and resolve technical issues.",
     ],
   },
   {
-    title: "Digital Marketing Specialist",
-    company_name: "MTE Consultants",
+    title: "Research Student",
+    company_name: "Mohawk College",
     icon: summiz,
     iconBg: "#accbe1",
-    date: "May 2021 to December 2021",
-    points: [
-      "Developed and implemented digital marketing strategies, increasing website traffic by 20% and generating over 100 leads.",
-      "Managed social media accounts, creating engaging content and increasing followers by 15%.",
-      "Analyzed marketing data and generated reports to track performance and identify areas for improvement.",
-    ],
-  },
-  {
-    title: "Information Technology Assistant",
-    company_name: "City of Brantford",
-    icon: it_assistant,
-    iconBg: "#accbe1",
-    date: "September 2020 to April 2021",
-    points: [
-      "Provided technical support to over 200 employees, resolving an average of 15 tickets daily.",
-      "Assisted in the deployment and maintenance of IT infrastructure, including hardware and software.",
-      "Collaborated with the IT team to implement new technologies and improve existing systems.",
+    date: "January 2023 to December 2023",
+    points: [      
+      "Researched and implemented Large Language Model (LLM) integration to enhance TEMI's conversational capabilities.",
+      "Analyzed existing speech interaction limitations in TEMI and designed a solution for handling open-ended queries.",
+      "Evaluated LLM platforms such as ChatGPT and Copilot, comparing latency, response quality, and real-time performance.",
     ],
   },
 ];
@@ -305,9 +307,9 @@ export const projects = [
   {
     iconUrl: wordpress,
     theme: "btn-back-yellow",
-    name: "Coffee Shop Website",
+    name: "NordOS",
     description:
-      "Crafted a visually stunning website using WordPress technology. Employed various plugins, themes, and other tools to enhance functionality and design.",
-    link: "http://beanthere.free.nf/",
+      "Declarative configurations for my NordOS setup, written in Nix language. This setup includes system configurations, and environment optimizations tailored for seamless development workflows.",
+    link: "https://github.com/sukhmancs/nixos-configs",
   },
 ];
